@@ -14,58 +14,39 @@ main{
    display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(189, 166, 169)
+   
 }
 .card{
 
   height: 300px;
-  width: 500px;
+  width: 300px;
   background-color: #fff;
   border-radius: 4px;
 }
-.outer{
-  height: 20px;
+.card img{
+  overflow: hidden;
+  height: 100%;
   width: 100%;
-  background-color: rgb(211, 216, 213);
-  border-radius: 8px;
-}
-.inner{
-  height: 20px;
-  width: 0%;
-  background-color: rgb(17, 187, 68);
-  border-radius: 2px;
-}
-p{
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: 400;
-}
-span{
-  font-size: 20px;
-  font-weight: 400;
-  color: rgb(10, 145, 249);
-}
-.bottom{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-button{
-  padding: 20px;
-  margin: 20px;
-  font-size: 18px;
-  background-color: rgb(86, 157, 110);
-  border: none;
+  object-fit: cover;
   border-radius: 4px;
-  
 }
-.bottom h1{
-  font-size: 25px;
-  padding:10px 10px;
+.card h1{
+  text-align: center;
+
+  color: #fff;
 }
-button:active{
-  scale: 0.95;
+.card i{
+position: absolute;
+left: 50%;
+top: 50%;
+font-size: 80px;
+background-image: url(https://tse4.mm.bing.net/th/id/OIP.v6clNchCzR98UTXLpggWrQHaH_?pid=Api&P=0&h=180);
+background-size: cover;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+transform:translate(-50%,-50%) scale(0) rotate(-60deg);
+transition: all cubic-bezier(.71,1.64,.42,1.01) 0.4s;
   
 }

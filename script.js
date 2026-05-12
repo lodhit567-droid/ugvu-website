@@ -1,17 +1,16 @@
-let btn= document.querySelector("button");
-let inner= document.querySelector(".inner");
-let h1= document.querySelector("h1");
-let grow = 0;
-btn.addEventListener("click",()=>{
-   btn.style.pointerEvents = "none";
-   let a = setInterval(()=>{
-   grow++;
-   h1.innerHTML= grow+"%";
-   inner.style.width= grow+"%";
-},50)
-setTimeout(() => {
-   clearInterval(a);
-   h1.innerHTML= "Download Complete";
-   btn.style.opacity = 0.1;
-}, 5000);
+let img = document.querySelector('img')
+let i = document.querySelector('i')
+
+addEventListener('dblclick',function(){
+   i.style.transform = "translate(-50%, -50%) scale(1) rotate(0deg)"
+   i.style.opacity = "1"
+   setTimeout(function(){
+      i.style.transform = "translate(-50%, -200%) scale(1) rotate(0deg)"
+   },700)
+   setTimeout(function(){
+      i.style.opacity = "0"
+   },1000)
+   setTimeout(function(){
+      i.style.transform = "translate(-50%, -50%) scale(0) rotate(0deg)"
+   },1200)
 })
